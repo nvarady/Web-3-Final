@@ -1,0 +1,121 @@
+/* =============
+    tool-care
+============= */
+
+#tool-care{
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". tool-care .";
+    background-color: var(--cherry60);
+    line-height: 0;
+    //padding-bottom: 60px;
+
+    #tc-slant{
+        padding: 0;
+       // margin-bottom: 20px;
+        
+        
+        
+       
+
+        svg{
+
+            width: 100%;
+            
+            
+        }
+    }
+
+
+    
+
+    >div{
+
+        grid-area: tool-care;
+        background-color: var(--cantelope100);
+        border-radius: 10px;
+        
+        display: flex;
+        flex-direction: column;
+        padding: 0px 20px;
+        gap: 20px;
+
+
+        
+        
+
+        #care-card{
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 60px;
+
+            h1{
+
+                //padding-bottom: 20px;
+            }
+
+            #sharpening{
+                margin-bottom: 32px;
+            }
+            #properuse{
+                margin-bottom: 32px;
+            }
+
+          
+
+
+        }
+
+        @include lg{
+            margin: 0px 180px;
+            padding: 0px 32px;
+            #care-card{
+                
+                
+                    #sharpening{
+                        display: grid;
+                        grid-template-columns: 50% auto;
+                        margin-bottom: 60px;
+                        gap: 24px;
+                        align-items: center;
+                        
+                    }
+                    #properuse{
+                        display: grid;
+                        grid-template-columns: 50% auto;
+                        grid-template-areas: "p2 p1";
+                        align-items: center;
+                        gap: 24px;
+    
+                        #p1{
+                            grid-area: p1;
+                        }
+                        #p2{
+                            grid-area: p2;
+                        }
+
+
+        }
+
+       
+                }
+
+
+                
+            }
+        }
+
+
+        svg{
+
+           
+           line-height: 0;
+           display: block;
+           width: fit-content;
+           margin-top: -10px;
+            
+        }
+
+
+
+    }

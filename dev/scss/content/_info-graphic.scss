@@ -1,0 +1,19 @@
+/* =============
+    info-graphic
+============= */
+
+#info-graphic{
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--cherry60);
+    margin-top: -30px;
+    padding: 60px 24px;
+    img{
+        width: 100%;
+        max-width: 1170px;
+        line-height: 0;
+        display: block;
+    }
+}

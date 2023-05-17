@@ -1,0 +1,110 @@
+/* =============
+    parts
+============= */
+
+#parts{
+
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". parts .";
+    padding-top: 32px;
+    background-color: var(--cantelope100);
+    padding-bottom: 120px;
+
+
+    >div{
+
+        background-color: aqua;
+        grid-area: parts;
+        
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 16px;
+
+        @include lg{
+            flex-direction: row;
+            gap: 0px;
+            margin: 0;
+        }
+
+       
+        }
+
+    #blade-container{
+        width: 100%;
+        
+       
+        #blade{
+            
+            background-color: var(--cherry90);
+            //padding: 20px;
+            gap: 20px;
+            @include md{
+               
+                display: grid; 
+                grid-template-columns: 50% auto;   
+                #blade-text{
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+             }
+           
+
+            #bimg-container{
+
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                height: 100%;
+
+                #blade-img{
+
+
+                }   
+
+            }
+             
+        }
+    }
+    #handle-container{
+       
+       
+
+        #handle{
+            
+            background-color: var(--cherry90);
+            //padding: 20px;
+            gap: 20px;
+            @include lg{
+               
+                display: grid; 
+                grid-template-columns: 50% auto;   
+                #blade-text{
+                    display: flex;
+                    flex-direction: column;
+                }
+                
+             }
+           
+
+            #himg-container{
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                height: 100%;
+
+                #handle-img{
+    
+                }   
+
+            }
+             
+        }
+    }
+
+
+}
