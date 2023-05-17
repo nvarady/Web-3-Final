@@ -4,6 +4,7 @@
 
 svg{
 
+    
     margin-top: -60px;
     fill: var(--cantelope100);
     line-height: 0;
@@ -34,6 +35,7 @@ svg{
 
 
 
+
     >div{
 
         grid-area: details;
@@ -58,8 +60,8 @@ svg{
                 gap: 10px;
                 row-gap: 10px;
                 grid-template-areas:
-                 ". i1 i1 i2 i2 ."
-                 "i3 i3 i4 i4 i5 i5";
+                 ". i1 i1 i1 i1 ."
+                 "i2 i2 i3 i3 i4 i4";
 
 
                 #i1{
@@ -73,9 +75,6 @@ svg{
                 }
                 #i4{
                     grid-area: i4;
-                }
-                #i5{
-                    grid-area: i5;
                 }
 
             }
