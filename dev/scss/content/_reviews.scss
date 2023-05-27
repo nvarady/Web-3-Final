@@ -1,3 +1,171 @@
 /* =============
     reviews
 ============= */
+
+#reviews{
+
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". reviews .";
+    padding-top: 32px;
+   
+  background-color: var(--g-dark);
+   
+
+    #review-container{
+            display: flex;
+            flex-direction: column;
+            justify-self: center;
+            border-radius: 16px;
+            background-color: var(--cantelope100);
+            max-width: 800px;
+
+
+        grid-area: reviews;
+
+        #review-head{
+
+            h2{
+                display: flex;
+                align-content: center;
+                 justify-content: center;
+            }
+            
+
+            #rating{
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                //gap: 20px;
+
+                h3{
+                    padding: 16px 20px;
+
+
+                }
+
+                #left{
+                    border-right: 1px solid var(--sky10);
+                   
+                }
+
+
+            }
+
+            #stars{
+                display: flex;
+                align-content: center;
+                 justify-content: center;
+
+
+
+            }
+        }
+
+      #review-container-2{
+
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        
+
+        #review{
+
+            align-self: center;
+
+            background-color: var(--white);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-radius: 16px;
+            align-content: center;
+            
+            padding: 20px;
+            margin: 20px;
+            gap: 10px;
+           
+
+
+            @include md{
+                flex-direction: row;
+                gap: 40px;
+            }
+
+            #profile{
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                // padding: 20px 0px;
+
+                @include md{
+                    flex-direction: column;
+                    gap: 0;
+                    
+                }
+
+                
+
+                .profile-img{
+
+                    display: flex;
+                    align-content: baseline;
+                   
+                
+
+                  
+                   
+                    
+
+                    img{
+                        border-radius: 50%;
+                        width: 80px;
+                        height: 80px;
+                      
+
+    
+                    }
+                }
+
+                .info{
+
+               gap: 0;
+               p{
+                line-height: 8px;
+               }
+
+                }
+
+
+
+
+            }
+
+            #entry{
+
+                display: flex;
+                flex-direction: column;
+                max-width: 200px;
+                align-content: center;
+
+
+            }
+
+            #review-img{
+             
+                img{
+                 
+                    
+                }
+
+
+            }
+        }
+      }
+
+ 
+
+
+    }
+    
+}

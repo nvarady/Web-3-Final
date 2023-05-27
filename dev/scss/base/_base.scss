@@ -130,3 +130,13 @@ p{
     color: var(--sky10);
 }
 
+
+.show-lg{
+
+    display: none;
+
+    @include lg{
+        display: block;
+    }
+}
+

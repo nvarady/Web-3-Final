@@ -8,37 +8,26 @@
     grid-template-areas: ". tool-care .";
     background-color: var(--cherry60);
     line-height: 0;
-    //padding-bottom: 60px;
-
-    #tc-slant{
-        padding: 0;
-       // margin-bottom: 20px;
-        
-        
-        
-       
-
-        svg{
-
-            width: 100%;
-            
-            
-        }
-    }
-
-
+    padding-bottom: 80px;
     
 
-    >div{
 
+
+    >div{
+       
+
+    
         grid-area: tool-care;
         background-color: var(--cantelope100);
         border-radius: 10px;
         
+        
+        
         display: flex;
         flex-direction: column;
         padding: 0px 20px;
-        gap: 20px;
+        gap: 0px;
+
 
 
         
@@ -48,10 +37,11 @@
             display: flex;
             flex-direction: column;
             margin-bottom: 60px;
+            color: aqua;
 
             h1{
 
-                //padding-bottom: 20px;
+                padding: 20px 0px;
             }
 
             #sharpening{
@@ -106,16 +96,19 @@
         }
 
 
-        svg{
 
-           
-           line-height: 0;
-           display: block;
-           width: fit-content;
-           margin-top: -10px;
-            
+
+
+    }
+
+    #tc-curve-bottom{
+        margin-top: 50px;
+
+        @include md{
+            margin-top: 80px;
         }
 
-
-
+        @include lg{
+            margin-top: 100px;
+        }
     }
