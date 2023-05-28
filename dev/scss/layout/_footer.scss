@@ -1,3 +1,82 @@
 /* =============
     Footer
 ============= */
+
+#footer{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--cherry90);
+
+    
+
+    #logo{
+
+      
+        
+
+
+        padding: 40px;
+        max-width: 400px;
+
+        img{
+
+            width: 100%;
+
+
+        }
+    }
+
+    #foot{
+        background-color: var(--cantelope100);
+        width: 100%;
+
+        padding: 16px 24px;
+
+        #foot-nav{
+
+            align-items: center;
+            justify-content: center;
+            padding: 24px 8px;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            
+
+            @include lg{
+                display: flex;
+                gap: 60px;
+                
+
+            }
+
+            li{
+                text-align: center;
+                a{
+                    color: var(--sky10);
+                    font-family: 'Noto Sans';
+                    
+                }
+            }
+
+        }
+
+        #socials{
+
+            padding: 40px 0px;
+            padding-bottom: 50px;
+
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+        }
+        p{
+            text-align: center;
+            line-height: 8px;
+            font-size: 10px;
+            
+        }
+    }
+}

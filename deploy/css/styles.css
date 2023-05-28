@@ -485,6 +485,58 @@ textarea {
 /* =============
     Footer
 ============= */
+#footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--cherry90);
+}
+#footer #logo {
+  padding: 40px;
+  max-width: 400px;
+}
+#footer #logo img {
+  width: 100%;
+}
+#footer #foot {
+  background-color: var(--cantelope100);
+  width: 100%;
+  padding: 16px 24px;
+}
+#footer #foot #foot-nav {
+  align-items: center;
+  justify-content: center;
+  padding: 24px 8px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+@media (min-width: 1024px) {
+  #footer #foot #foot-nav {
+    display: flex;
+    gap: 60px;
+  }
+}
+#footer #foot #foot-nav li {
+  text-align: center;
+}
+#footer #foot #foot-nav li a {
+  color: var(--sky10);
+  font-family: "Noto Sans";
+}
+#footer #foot #socials {
+  padding: 40px 0px;
+  padding-bottom: 50px;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+#footer #foot p {
+  text-align: center;
+  line-height: 8px;
+  font-size: 10px;
+}
+
 /* =============
     product
 ============= */
@@ -816,10 +868,12 @@ svg {
 
 #tc-curve-bottom {
   margin-top: 50px;
+  margin-bottom: -40px;
 }
 @media (min-width: 768px) {
   #tc-curve-bottom {
     margin-top: 80px;
+    margin-bottom: -100px;
   }
 }
 @media (min-width: 1024px) {
@@ -835,8 +889,13 @@ svg {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". reviews .";
-  padding-top: 32px;
-  background-color: var(--g-dark);
+  padding-top: 100px;
+  background-image: linear-gradient(180deg, #E1CABA -4.15%, #CBA086 24.83%, #91472D 100%);
+}
+@media (min-width: 1024px) {
+  #reviews {
+    padding-top: 120px;
+  }
 }
 #reviews #review-container {
   display: flex;
@@ -845,12 +904,22 @@ svg {
   border-radius: 16px;
   background-color: var(--cantelope100);
   max-width: 800px;
+  margin-bottom: 60px;
   grid-area: reviews;
+}
+#reviews #review-container #review-head {
+  border-bottom: 1px solid var(--sky10);
+  padding: 20px;
 }
 #reviews #review-container #review-head h2 {
   display: flex;
   align-content: center;
   justify-content: center;
+}
+@media (min-width: 1024px) {
+  #reviews #review-container #review-head h2 {
+    align-self: center;
+  }
 }
 #reviews #review-container #review-head #rating {
   display: flex;
@@ -867,6 +936,16 @@ svg {
   display: flex;
   align-content: center;
   justify-content: center;
+}
+@media (min-width: 1024px) {
+  #reviews #review-container #review-head #stars {
+    margin-left: auto;
+  }
+}
+@media (min-width: 1024px) {
+  #reviews #review-container #review-head {
+    display: flex;
+  }
 }
 #reviews #review-container #review-container-2 {
   display: flex;
@@ -923,4 +1002,38 @@ svg {
   flex-direction: column;
   max-width: 200px;
   align-content: center;
+}
+/* =============
+    reviews
+============= */
+#related {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". related .";
+  background-color: var(--cantelope100);
+}
+#related #related-container {
+  grid-area: related;
+}
+#related #related-container ul {
+  display: grid;
+  gap: 20px;
+}
+#related #related-container ul li {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 16px;
+}
+#related #related-container ul li div img {
+  width: 200px;
+}
+#related #related-container ul li aside {
+  text-align: center;
+}
+#related #related-container ul li aside button {
+  background-color: var(--sky10);
+}
+#related #related-container ul li aside button a {
+  color: white;
 }
