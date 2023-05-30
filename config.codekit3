@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34472",
   "files" : {
+    "\/deploy\/checkout.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 0
+    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -20,6 +28,32 @@
       "oAP" : "\/deploy\/css\/styles-min.css",
       "oF" : 0,
       "pg" : 0
+    },
+    "\/deploy\/Images\/checkout\/Afterpay.png" : {
+      "ft" : 32768,
+      "iS" : 2815,
+      "oA" : 0,
+      "oAP" : "\/deploy\/Images\/checkout\/Afterpay.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/Images\/checkout\/PayPal.png" : {
+      "ft" : 32768,
+      "iS" : 4698,
+      "oA" : 0,
+      "oAP" : "\/deploy\/Images\/checkout\/PayPal.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
     },
     "\/deploy\/Images\/gallery\/gallery1.png" : {
       "ft" : 32768,
@@ -410,68 +444,92 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/dev\/content\/details.kit" : {
+    "\/dev\/billing.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/billing.html",
+      "oF" : 2
+    },
+    "\/dev\/checkout.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/checkout.html",
+      "oF" : 2
+    },
+    "\/dev\/content\/cart\/cart.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/details.html",
+      "oAP" : "\/dev\/content\/cart\/cart.html",
       "oF" : 0
     },
-    "\/dev\/content\/gallery.kit" : {
+    "\/dev\/content\/product-pg\/details.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/gallery.html",
+      "oAP" : "\/dev\/content\/product-pg\/details.html",
       "oF" : 0
     },
-    "\/dev\/content\/info-graphic.kit" : {
+    "\/dev\/content\/product-pg\/gallery.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/info-graphic.html",
+      "oAP" : "\/dev\/content\/product-pg\/gallery.html",
       "oF" : 0
     },
-    "\/dev\/content\/parts.kit" : {
+    "\/dev\/content\/product-pg\/parts.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/parts.html",
+      "oAP" : "\/dev\/content\/product-pg\/parts.html",
       "oF" : 0
     },
-    "\/dev\/content\/product.kit" : {
+    "\/dev\/content\/product-pg\/product.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/product.html",
+      "oAP" : "\/dev\/content\/product-pg\/product.html",
       "oF" : 0
     },
-    "\/dev\/content\/related.kit" : {
+    "\/dev\/content\/product-pg\/related.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/related.html",
+      "oAP" : "\/dev\/content\/product-pg\/related.html",
       "oF" : 0
     },
-    "\/dev\/content\/reviews.kit" : {
+    "\/dev\/content\/product-pg\/rev-rel.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/reviews.html",
+      "oAP" : "\/dev\/content\/product-pg\/rev-rel.html",
       "oF" : 0
     },
-    "\/dev\/content\/tool-care.kit" : {
+    "\/dev\/content\/product-pg\/reviews.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/tool-care.html",
+      "oAP" : "\/dev\/content\/product-pg\/reviews.html",
+      "oF" : 0
+    },
+    "\/dev\/content\/product-pg\/tool-care.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/product-pg\/tool-care.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -615,7 +673,7 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/content\/_details.scss" : {
+    "\/dev\/scss\/content\/Checkout\/_cart.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -624,13 +682,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/content\/_details.css",
+      "oAP" : "\/dev\/scss\/content\/Checkout\/_cart.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/content\/_gallery.scss" : {
+    "\/dev\/scss\/content\/product-pg\/_details.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -639,13 +697,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/content\/_gallery.css",
+      "oAP" : "\/dev\/scss\/content\/product-pg\/_details.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/content\/_info-graphic.scss" : {
+    "\/dev\/scss\/content\/product-pg\/_gallery.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -654,13 +712,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/content\/_info-graphic.css",
+      "oAP" : "\/dev\/scss\/content\/product-pg\/_gallery.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/content\/_parts.scss" : {
+    "\/dev\/scss\/content\/product-pg\/_parts.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -669,13 +727,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/content\/_parts.css",
+      "oAP" : "\/dev\/scss\/content\/product-pg\/_parts.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/content\/_product.scss" : {
+    "\/dev\/scss\/content\/product-pg\/_product.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -684,13 +742,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/content\/_product.css",
+      "oAP" : "\/dev\/scss\/content\/product-pg\/_product.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/content\/_related.scss" : {
+    "\/dev\/scss\/content\/product-pg\/_related.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -699,13 +757,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/content\/_related.css",
+      "oAP" : "\/dev\/scss\/content\/product-pg\/_related.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/content\/_reviews.scss" : {
+    "\/dev\/scss\/content\/product-pg\/_rev-rel.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -714,13 +772,13 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/content\/_reviews.css",
+      "oAP" : "\/dev\/scss\/content\/product-pg\/_rev-rel.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
     },
-    "\/dev\/scss\/content\/_tool-care.scss" : {
+    "\/dev\/scss\/content\/product-pg\/_reviews.scss" : {
       "aP" : 0,
       "bl" : 0,
       "co" : 0,
@@ -729,7 +787,22 @@
       "ft" : 4,
       "ma" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/scss\/content\/_tool-care.css",
+      "oAP" : "\/dev\/scss\/content\/product-pg\/_reviews.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/content\/product-pg\/_tool-care.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/content\/product-pg\/_tool-care.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
@@ -809,6 +882,22 @@
       "oS" : 0,
       "pg" : 0,
       "sct" : 0
+    },
+    "\/dev\/shipping.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/shipping.html",
+      "oF" : 2
+    },
+    "\/dev\/thankyou.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/thankyou.html",
+      "oF" : 2
     }
   },
   "hooks" : [

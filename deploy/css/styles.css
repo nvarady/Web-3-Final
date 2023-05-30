@@ -359,24 +359,31 @@ ul li {
   vertical-align: middle;
 }
 
-.button {
+.button-1 {
   padding: 8px 60px;
   border-radius: 16px;
   border: none;
-  justify-content: center;
-  color: white;
   background-color: var(--sky60);
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  .button-1 {
+    padding: 16px 100px;
+    font-size: 24px;
+  }
+}
+.button-1 a {
+  color: white;
   font-family: "Noto Serif";
   font-style: normal;
   font-weight: 600;
   font-size: 20px;
   line-height: 33px;
+  text-decoration: none;
 }
-@media (min-width: 1024px) {
-  .button {
-    padding: 16px 100px;
-    font-size: 24px;
-  }
+
+a {
+  text-decoration: none;
 }
 
 .tc-button {
@@ -394,11 +401,6 @@ ul li {
 
 .largeimages {
   width: 100%;
-}
-@media (min-width: 1024px) {
-  .largeimages {
-    max-width: 471px;
-  }
 }
 
 .parts-img {
@@ -443,6 +445,27 @@ p {
   }
 }
 
+button {
+  border: none;
+  border-radius: 16px;
+}
+
+.cards {
+  background-color: var(--cantelope100);
+  border-radius: 16px;
+  padding: 20px;
+}
+.cards h1 {
+  font-family: "Noto Sans";
+  font-weight: 600;
+  color: var(--sky60);
+}
+.cards h2 {
+  font-size: 20px;
+  font-family: "Noto Sans";
+  font-weight: 600;
+}
+
 /* =============
     Typography
 ============= */
@@ -485,22 +508,19 @@ textarea {
 /* =============
     Footer
 ============= */
-#footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: var(--cherry90);
-}
 #footer #logo {
-  padding: 40px;
-  max-width: 400px;
+  background-color: var(--cherry90);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 60px 16px;
 }
 #footer #logo img {
+  max-width: 400px;
   width: 100%;
 }
 #footer #foot {
   background-color: var(--cantelope100);
-  width: 100%;
   padding: 16px 24px;
 }
 #footer #foot #foot-nav {
@@ -523,6 +543,7 @@ textarea {
 #footer #foot #foot-nav li a {
   color: var(--sky10);
   font-family: "Noto Sans";
+  font-size: 12px;
 }
 #footer #foot #socials {
   padding: 40px 0px;
@@ -541,13 +562,12 @@ textarea {
     product
 ============= */
 #product {
-  background-color: var(--cherry90);
+  background-image: linear-gradient(180deg, #EFE3DA 0%, #CBA086 100%);
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". product .";
   padding-bottom: 60px;
-  padding-top: 32px;
-  background-image: linear-gradient(180deg, #EFE3DA 0%, #CBA086 100%);
+  padding-top: 60px;
 }
 @media (min-width: 768px) {
   #product {
@@ -565,7 +585,7 @@ textarea {
     details
 ============= */
 svg {
-  margin-top: -60px;
+  margin-top: -50px;
   fill: var(--cantelope100);
   line-height: 0;
   margin-bottom: -10px;
@@ -573,7 +593,7 @@ svg {
 }
 @media (min-width: 768px) {
   svg {
-    margin-top: -120px;
+    margin-top: -140px;
   }
 }
 @media (min-width: 1024px) {
@@ -587,7 +607,7 @@ svg {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". details .";
   background-color: var(--cantelope100);
-  padding-top: 0px;
+  padding-top: 20px;
 }
 #details > div {
   grid-area: details;
@@ -647,7 +667,12 @@ svg {
   grid-template-areas: ". parts .";
   padding-top: 32px;
   background-color: var(--cantelope100);
-  padding-bottom: 180px;
+  padding-bottom: 150px;
+}
+@media (min-width: 1024px) {
+  #parts {
+    padding-bottom: 200px;
+  }
 }
 #parts > div {
   grid-area: parts;
@@ -742,7 +767,12 @@ svg {
   flex-direction: column;
   justify-content: center;
   align-content: center;
-  margin: -80px 0px;
+  margin: -80px 0px -30px 0px;
+}
+@media (min-width: 1024px) {
+  #gallery-container {
+    margin: -80px 0px -100px 0px;
+  }
 }
 #gallery-container svg {
   width: 100%;
@@ -773,40 +803,29 @@ svg {
 }
 
 /* =============
-    info-graphic
+    tool-care
 ============= */
 #info-graphic {
   background-color: var(--cherry60);
   padding-top: 50px;
   line-height: 0;
-}
-@media (min-width: 768px) {
-  #info-graphic {
-    padding-top: 80px;
-  }
+  padding: 16px;
 }
 @media (min-width: 1024px) {
   #info-graphic {
-    padding-top: 100px;
+    padding-top: 60px;
   }
 }
 #info-graphic div {
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-top: -30px;
-  padding: 60px 24px;
 }
 #info-graphic div img {
   width: 100%;
-  max-width: 1170px;
-  line-height: 0;
-  display: block;
 }
 
-/* =============
-    tool-care
-============= */
 #tool-care {
   display: grid;
   grid-template-columns: 16px auto 16px;
@@ -828,7 +847,6 @@ svg {
   display: flex;
   flex-direction: column;
   margin-bottom: 60px;
-  color: aqua;
 }
 #tool-care > div #care-card h1 {
   padding: 20px 0px;
@@ -842,7 +860,6 @@ svg {
 @media (min-width: 1024px) {
   #tool-care > div {
     margin: 0px 180px;
-    padding: 0px 32px;
   }
   #tool-care > div #care-card #sharpening {
     display: grid;
@@ -883,6 +900,13 @@ svg {
 }
 
 /* =============
+    rev-rel
+============= */
+#rev-rel {
+  background-image: linear-gradient(180deg, #E1CABA -4.15%, #CBA086 24.83%, #91472D 100%);
+}
+
+/* =============
     reviews
 ============= */
 #reviews {
@@ -890,7 +914,6 @@ svg {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". reviews .";
   padding-top: 100px;
-  background-image: linear-gradient(180deg, #E1CABA -4.15%, #CBA086 24.83%, #91472D 100%);
 }
 @media (min-width: 1024px) {
   #reviews {
@@ -909,7 +932,7 @@ svg {
 }
 #reviews #review-container #review-head {
   border-bottom: 1px solid var(--sky10);
-  padding: 20px;
+  margin: 20px;
 }
 #reviews #review-container #review-head h2 {
   display: flex;
@@ -927,15 +950,19 @@ svg {
   justify-content: center;
 }
 #reviews #review-container #review-head #rating h3 {
-  padding: 16px 20px;
+  padding: 0 20px;
+  color: var(--sky10);
+  font-family: "Noto Sans";
+  font-weight: 300;
 }
 #reviews #review-container #review-head #rating #left {
-  border-right: 1px solid var(--sky10);
+  border-right: 2px solid var(--sky10);
 }
 #reviews #review-container #review-head #stars {
   display: flex;
   align-content: center;
   justify-content: center;
+  gap: 4px;
 }
 @media (min-width: 1024px) {
   #reviews #review-container #review-head #stars {
@@ -947,11 +974,9 @@ svg {
     display: flex;
   }
 }
-#reviews #review-container #review-container-2 {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  justify-content: center;
+#reviews #review-container #review-container-2 .disabled {
+  opacity: 0.5;
+  color: var(--sky10);
 }
 #reviews #review-container #review-container-2 #review {
   align-self: center;
@@ -990,19 +1015,76 @@ svg {
   border-radius: 50%;
   width: 80px;
   height: 80px;
+  background-size: cover;
+}
+#reviews #review-container #review-container-2 #review #profile #profile-img-1 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-image: url(../Images/reviews/rich.webp);
+  background-size: cover;
+  background-position: center left;
+}
+#reviews #review-container #review-container-2 #review #profile #profile-img-2 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-image: url(../Images/reviews/rob.jpeg);
+  background-size: cover;
+  background-position: center right;
+}
+#reviews #review-container #review-container-2 #review #profile #profile-img-3 {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  background-image: url(../Images/reviews/kirk.jpeg);
+  background-size: cover;
+  background-position: center right;
 }
 #reviews #review-container #review-container-2 #review #profile .info {
   gap: 0;
 }
 #reviews #review-container #review-container-2 #review #profile .info p {
   line-height: 8px;
+  font-size: 14px;
+  opacity: 0.85;
+}
+#reviews #review-container #review-container-2 #review #profile .info #name {
+  font-size: 16px;
+  font-weight: 600;
+  opacity: 100;
 }
 #reviews #review-container #review-container-2 #review #entry {
   display: flex;
   flex-direction: column;
   max-width: 200px;
-  align-content: center;
+  gap: 0;
 }
+#reviews #review-container #review-container-2 #review #entry h2 {
+  font-size: 20px;
+}
+#reviews #review-container #review-container-2 #review #entry #stars-2 {
+  line-height: 0;
+  margin: -8px 0;
+}
+#reviews #review-container #review-container-2 #review-nav {
+  display: flex;
+  align-self: center;
+  gap: 20px;
+  padding-bottom: 20px;
+  justify-content: center;
+}
+#reviews #review-container #review-container-2 #review-nav li a {
+  color: var(--sky10);
+  font-family: "Noto Sans";
+}
+
 /* =============
     reviews
 ============= */
@@ -1010,30 +1092,103 @@ svg {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". related .";
-  background-color: var(--cantelope100);
+  padding-bottom: 60px;
 }
 #related #related-container {
   grid-area: related;
+  background-color: var(--cantelope100);
+  padding: 20px;
+  border-radius: 16px;
+}
+#related #related-container h2 {
+  padding-bottom: 20px;
 }
 #related #related-container ul {
   display: grid;
+  grid-template-columns: 50% auto;
   gap: 20px;
 }
+@media (min-width: 1024px) {
+  #related #related-container ul {
+    display: flex;
+  }
+}
 #related #related-container ul li {
-  display: flex;
-  flex-direction: column;
+  padding: 20px;
   background-color: var(--white);
   border-radius: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
 }
 #related #related-container ul li div img {
-  width: 200px;
+  width: 100%;
 }
 #related #related-container ul li aside {
-  text-align: center;
+  margin-top: auto;
+}
+#related #related-container ul li aside h3 {
+  font-family: "Noto Sans";
+  color: var(--sky10);
 }
 #related #related-container ul li aside button {
-  background-color: var(--sky10);
+  align-self: center;
+  padding: 8px 20px;
+  border: none;
+  background-color: var(--sky60);
+  border-radius: 6px;
 }
 #related #related-container ul li aside button a {
-  color: white;
+  color: var(--white);
+}
+
+/* =============
+    Cart
+============= */
+#cart {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". cart .";
+  background-image: linear-gradient(180deg, #E1CABA -4.15%, #CBA086 24.83%, #91472D 100%);
+}
+#cart > div {
+  grid-area: cart;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#cart > div #cart-card img {
+  width: 100%;
+  padding: 8px;
+}
+#cart > div #cart-card div {
+  display: flex;
+  justify-content: space-between;
+}
+#cart > div #cart-card div .edit {
+  text-decoration: underline;
+  font-size: 16px;
+  font-family: "Noto Sans";
+  font-weight: 300;
+  color: var(--sky10);
+}
+#cart > div #cart-card #sub {
+  border-bottom: 2px solid var(--sky10);
+}
+#cart > div #order {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+#cart > div #order div {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+#cart > div #order div button {
+  background-color: var(--white);
+}
+#cart > div #order-summary div {
+  display: flex;
+  justify-content: space-between;
 }

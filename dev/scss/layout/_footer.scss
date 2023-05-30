@@ -4,23 +4,17 @@
 
 #footer{
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--cherry90);
-
-    
-
     #logo{
 
-      
+        background-color: var(--cherry90);
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        padding: 60px 16px;
         
 
-
-        padding: 40px;
-        max-width: 400px;
-
         img{
+            max-width: 400px;
 
             width: 100%;
 
@@ -30,7 +24,7 @@
 
     #foot{
         background-color: var(--cantelope100);
-        width: 100%;
+        //width: 100%;
 
         padding: 16px 24px;
 
@@ -57,6 +51,7 @@
                 a{
                     color: var(--sky10);
                     font-family: 'Noto Sans';
+                    font-size: 12px ;
                     
                 }
             }

@@ -18,12 +18,12 @@
 @import "layout/_header";
 @import "layout/_footer";
 
+
 // Sections Styles
-@import "content/_product";
-@import "content/_details";
-@import "content/parts";
-@import "content/gallery";
-@import "content/_info-graphic";
-@import "content/_tool-care";
-@import "content/_reviews";
-@import "content/_related";
+@import "content/product-pg/_product";
+@import "content/product-pg/_details";
+@import "content/product-pg/parts";
+@import "content/product-pg/gallery";
+@import "content/product-pg/_tool-care";
+@import "content/product-pg/_rev-rel";
+@import "content/checkout/_cart";

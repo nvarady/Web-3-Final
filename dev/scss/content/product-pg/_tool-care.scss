@@ -2,6 +2,36 @@
     tool-care
 ============= */
 
+
+#info-graphic{
+    background-color: var(--cherry60);
+    padding-top: 50px;
+    line-height: 0;
+    padding: 16px;
+
+    @include lg{
+        padding-top: 60px;
+    }
+
+
+
+
+
+div{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+img{
+
+    width: 100%;
+
+
+}
+}
+}
+
 #tool-care{
     display: grid;
     grid-template-columns: 16px auto 16px;
@@ -10,8 +40,6 @@
     line-height: 0;
     padding-bottom: 80px;
     
-
-
 
     >div{
        
@@ -37,7 +65,6 @@
             display: flex;
             flex-direction: column;
             margin-bottom: 60px;
-            color: aqua;
 
             h1{
 
@@ -58,7 +85,6 @@
 
         @include lg{
             margin: 0px 180px;
-            padding: 0px 32px;
             #care-card{
                 
                 
