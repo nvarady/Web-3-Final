@@ -465,6 +465,27 @@ button {
   font-family: "Noto Sans";
   font-weight: 600;
 }
+.cards div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.checkout-info {
+  padding: 20px;
+}
+.checkout-info input {
+  width: 100%;
+  border: none;
+  background-color: aqua;
+}
+.checkout-info div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.checkout-info #checkout-buttons {
+  margin-top: 20px;
+}
 
 /* =============
     Typography
@@ -1157,6 +1178,12 @@ svg {
   flex-direction: column;
   gap: 20px;
 }
+@media (min-width: 768px) {
+  #cart > div {
+    flex-direction: row;
+    margin: 180px;
+  }
+}
 #cart > div #cart-card img {
   width: 100%;
   padding: 8px;
@@ -1175,20 +1202,25 @@ svg {
 #cart > div #cart-card #sub {
   border-bottom: 2px solid var(--sky10);
 }
+#cart > div #payment #order-summary {
+  display: none;
+}
+@media (min-width: 768px) {
+  #cart > div #payment #order-summary {
+    display: block;
+    margin-bottom: 16px;
+  }
+}
 #cart > div #order {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 16px;
 }
 #cart > div #order div {
   display: flex;
-  gap: 8px;
+  gap: 16px;
   justify-content: center;
 }
 #cart > div #order div button {
   background-color: var(--white);
-}
-#cart > div #order-summary div {
-  display: flex;
-  justify-content: space-between;
 }

@@ -9,6 +9,14 @@
   ],
   "creatorBuild" : "34472",
   "files" : {
+    "\/deploy\/billing.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/billing.html",
+      "oF" : 0
+    },
     "\/deploy\/checkout.html" : {
       "cB" : 0,
       "ft" : 8192,
@@ -459,6 +467,14 @@
       "oA" : 0,
       "oAP" : "\/deploy\/checkout.html",
       "oF" : 2
+    },
+    "\/dev\/content\/cart\/billing-input.kit" : {
+      "cB" : 0,
+      "ft" : 2048,
+      "hM" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/content\/cart\/billing-input.html",
+      "oF" : 0
     },
     "\/dev\/content\/cart\/cart.kit" : {
       "cB" : 0,

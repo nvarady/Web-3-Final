@@ -19,6 +19,9 @@
 
         @include md{
 
+            flex-direction: row;
+            margin: 180px;
+
             
         }
 
@@ -63,17 +66,35 @@
 
         }
 
+        #payment{
+
+        
+
+            #order-summary{
+                display: none;
+                @include md{
+                    display: block;
+                    margin-bottom: 16px;
+
+                   
+                }
+            }
+
+        }
+
+ 
+
         #order{
 
 
 
             display: flex;
             flex-direction: column;
-            gap: 8px;
+            gap: 16px;
 
             div{
                 display: flex;
-                gap: 8px;
+                gap: 16px;
                 justify-content: center;
 
                 button{
@@ -82,15 +103,6 @@
             }
 
 
-        }
-
-        #order-summary{
-
-            div{
-                display: flex;
-                justify-content: space-between;
-            }
-                
         }
 
 
