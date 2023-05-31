@@ -348,9 +348,151 @@ ul li {
   list-style: none;
 }
 
+.line {
+  border-top: 2px solid var(--sky10);
+}
+
 .parts {
   width: 382px;
   height: 382px;
+}
+
+.largeimages {
+  width: 100%;
+}
+
+.parts-img {
+  width: 100%;
+  max-width: 400px;
+  max-height: 400px;
+}
+
+.show-lg {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .show-lg {
+    display: block;
+  }
+}
+
+.show-sm {
+  display: block;
+}
+@media (min-width: 768px) {
+  .show-sm {
+    display: none;
+  }
+}
+
+.cards {
+  background-color: var(--cantelope100);
+  border-radius: 16px;
+  padding: 8px 20px;
+  max-width: 400px;
+}
+.cards h2 {
+  font-size: 20px;
+}
+.cards div {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+.cards div aside {
+  display: flex;
+}
+.cards div aside img {
+  height: 50%;
+  align-self: center;
+}
+
+.tycards {
+  background-color: var(--cantelope100);
+  border-radius: 16px;
+  padding: 8px 20px;
+}
+@media (min-width: 1024px) {
+  .tycards {
+    width: 300px;
+  }
+}
+.tycards h2 {
+  font-size: 20px;
+}
+.tycards div {
+  display: flex;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+.tycards div aside {
+  display: flex;
+}
+.tycards div aside img {
+  height: 40%;
+  align-self: center;
+}
+
+.checkout-styling {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". billing .";
+  padding-bottom: 80px;
+  background-image: linear-gradient(180deg, #E1CABA -4.15%, #CBA086 24.83%, #91472D 100%);
+}
+.checkout-styling > div {
+  grid-area: billing;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 1024px) {
+  .checkout-styling > div {
+    flex-direction: row-reverse;
+    margin: 180px;
+  }
+}
+
+/* =============
+    Typography
+============= */
+body {
+  font-family: "Noto Sans", sans-serif;
+  font-family: "Noto Serif", serif;
+}
+
+h1, h2 {
+  font-weight: 500;
+}
+
+h1 {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-size: 24px;
+  line-height: 33px;
+  color: var(--sky10);
+}
+
+h2 {
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-size: 24px;
+  line-height: 22px;
+  color: var(--sky10);
+}
+
+p {
+  font-size: 16px;
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  color: var(--sky10);
+}
+
+a {
+  text-decoration: none;
 }
 
 .text-center {
@@ -359,12 +501,21 @@ ul li {
   vertical-align: middle;
 }
 
+/* =============
+    Buttons
+============= */
+button {
+  border: none;
+  border-radius: 16px;
+}
+
 .button-1 {
   padding: 8px 60px;
   border-radius: 16px;
   border: none;
   background-color: var(--sky60);
   justify-content: center;
+  font-size: 24px;
 }
 @media (min-width: 1024px) {
   .button-1 {
@@ -382,8 +533,40 @@ ul li {
   text-decoration: none;
 }
 
-a {
+.button-2 {
+  padding: 8px 60px;
+  border-radius: 16px;
+  border: none;
+  background-color: var(--sky60);
+  justify-content: center;
+  font-size: 24px;
+}
+.button-2 a {
+  color: white;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-size: 20px;
   text-decoration: none;
+}
+.button-2 a h1 {
+  color: white;
+}
+
+.button-3 {
+  background-color: var(--sky60);
+  justify-content: center;
+  margin-top: 20px;
+}
+.button-3 a {
+  color: white;
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-size: 16px;
+  text-decoration: none;
+}
+.button-3 a h1 {
+  color: white;
+  padding: 0px 16px;
 }
 
 .tc-button {
@@ -399,109 +582,6 @@ a {
   text-decoration-line: underline;
 }
 
-.largeimages {
-  width: 100%;
-}
-
-.parts-img {
-  width: 100%;
-  max-width: 400px;
-  max-height: 400px;
-}
-
-h1 {
-  font-family: "Noto Serif";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 33px;
-  color: var(--sky10);
-}
-
-h2 {
-  font-family: "Noto Serif";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 22px;
-  color: var(--sky10);
-}
-
-p {
-  font-size: 16px;
-  font-family: "Noto Sans";
-  font-style: normal;
-  font-weight: 400;
-  line-height: 22px;
-  color: var(--sky10);
-}
-
-.show-lg {
-  display: none;
-}
-@media (min-width: 1024px) {
-  .show-lg {
-    display: block;
-  }
-}
-
-button {
-  border: none;
-  border-radius: 16px;
-}
-
-.cards {
-  background-color: var(--cantelope100);
-  border-radius: 16px;
-  padding: 20px;
-}
-.cards h1 {
-  font-family: "Noto Sans";
-  font-weight: 600;
-  color: var(--sky60);
-}
-.cards h2 {
-  font-size: 20px;
-  font-family: "Noto Sans";
-  font-weight: 600;
-}
-.cards div {
-  display: flex;
-  justify-content: space-between;
-}
-
-.checkout-info {
-  padding: 20px;
-}
-.checkout-info input {
-  width: 100%;
-  border: none;
-  background-color: aqua;
-}
-.checkout-info div {
-  display: flex;
-  justify-content: space-between;
-  gap: 16px;
-}
-.checkout-info #checkout-buttons {
-  margin-top: 20px;
-}
-
-/* =============
-    Typography
-============= */
-body {
-  font-family: "Noto Sans", sans-serif;
-  font-family: "Noto Serif", serif;
-}
-
-h1, h2 {
-  font-weight: 500;
-}
-
-/* =============
-    Buttons
-============= */
 /* =============
     Forms
 ============= */
@@ -518,6 +598,102 @@ input[type=email],
 input[type=password],
 textarea {
   -webkit-appearance: none;
+}
+
+.checkout-info {
+  padding: 20px;
+  background-color: var(--cantelope100);
+  border-radius: 16px;
+  padding: 8px 20px;
+  max-width: 600px;
+}
+.checkout-info h1 {
+  font-size: 20px;
+}
+.checkout-info p {
+  font-size: 14px;
+}
+@media (min-width: 1024px) {
+  .checkout-info {
+    width: 100%;
+  }
+}
+.checkout-info #check-container {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.checkout-info #check-container #icon-container {
+  align-self: center;
+  display: flex;
+}
+.checkout-info #check-container #icon-container input[type=checkbox] {
+  /* Hide the default checkbox */
+  display: none;
+}
+.checkout-info #check-container #icon-container label {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-color: var(--white);
+  cursor: pointer;
+}
+.checkout-info #check-container #icon-container label #checked {
+  display: none;
+}
+.checkout-info #check-container #icon-container input[type=checkbox]:checked + label {
+  background-color: transparent;
+}
+.checkout-info #check-container #icon-container input[type=checkbox]:checked + label #checked {
+  align-self: flex-end;
+  display: inline-block;
+  color: var(--cherry80);
+}
+.checkout-info #check-container #icon-container input[type=checkbox]:checked + label #checked i {
+  width: 20px;
+  height: 20px;
+}
+.checkout-info form input {
+  width: 100%;
+  border: none;
+  background-color: var(--white);
+  height: 40px;
+  font-family: "Noto Sans";
+}
+.checkout-info form p {
+  margin-bottom: 4px;
+}
+.checkout-info div {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+.checkout-info div form {
+  width: 100%;
+}
+
+.order {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.order div {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+}
+.order div button {
+  background-color: var(--white);
+  width: 100%;
+}
+.order div button a {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.order div button a img {
+  width: 80%;
+  padding: 8px 0;
 }
 
 /* =============
@@ -692,7 +868,7 @@ svg {
 }
 @media (min-width: 1024px) {
   #parts {
-    padding-bottom: 200px;
+    padding-bottom: 250px;
   }
 }
 #parts > div {
@@ -792,7 +968,7 @@ svg {
 }
 @media (min-width: 1024px) {
   #gallery-container {
-    margin: -80px 0px -100px 0px;
+    margin: -100px 0px -100px 0px;
   }
 }
 #gallery-container svg {
@@ -1164,63 +1340,137 @@ svg {
 }
 
 /* =============
-    Cart
+    cart
 ============= */
 #cart {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". cart .";
+  padding-bottom: 80px;
   background-image: linear-gradient(180deg, #E1CABA -4.15%, #CBA086 24.83%, #91472D 100%);
+}
+@media (min-width: 1024px) {
+  #cart {
+    padding-bottom: 200px;
+  }
 }
 #cart > div {
   grid-area: cart;
   display: flex;
   flex-direction: column;
+  margin-top: 60px;
   gap: 20px;
 }
 @media (min-width: 768px) {
   #cart > div {
     flex-direction: row;
-    margin: 180px;
+    align-content: center;
+    justify-content: center;
   }
 }
-#cart > div #cart-card img {
+#cart #cart-card {
+  height: fit-content;
+}
+#cart #cart-card img {
   width: 100%;
   padding: 8px;
 }
-#cart > div #cart-card div {
-  display: flex;
-  justify-content: space-between;
-}
-#cart > div #cart-card div .edit {
+#cart #cart-card .edit {
   text-decoration: underline;
-  font-size: 16px;
+  font-size: 12px;
   font-family: "Noto Sans";
   font-weight: 300;
   color: var(--sky10);
+  text-justify: end;
+  margin-top: 16px;
 }
-#cart > div #cart-card #sub {
+#cart #cart-card div {
+  display: flex;
+  justify-content: space-between;
+}
+#cart #cart-card .sub {
   border-bottom: 2px solid var(--sky10);
 }
-#cart > div #payment #order-summary {
+#cart #payment #cart-order-summary {
   display: none;
 }
 @media (min-width: 768px) {
-  #cart > div #payment #order-summary {
+  #cart #payment #cart-order-summary {
     display: block;
     margin-bottom: 16px;
   }
 }
-#cart > div #order {
+#cart #payment .sub {
+  border-bottom: 2px solid var(--sky10);
+}
+
+#related-checkout {
+  background-color: var(--cherry80);
+  padding-top: 18px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
-#cart > div #order div {
+#related-checkout svg {
+  line-height: 0;
+  margin-bottom: 10px;
+  background-color: transparent;
+  fill: var(--cherry80);
+}
+
+/* =============
+    billing
+============= */
+#billing {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". billing .";
+}
+#billing > div {
+  grid-area: billing;
   display: flex;
-  gap: 16px;
+  flex-direction: column;
+  gap: 20px;
+}
+@media (min-width: 1024px) {
+  #billing > div {
+    flex-direction: row-reverse;
+  }
+}
+
+/* =============
+    shipping
+============= */
+/* =============
+    thank you
+============= */
+#ty {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". thankyou .";
+  padding-bottom: 80px;
+  background-image: linear-gradient(180deg, #EFE3DA 0%, #CBA086 100%);
+}
+#ty > div {
+  grid-area: thankyou;
+  margin-top: 60px;
+}
+#ty > div #confirmation {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   justify-content: center;
 }
-#cart > div #order div button {
-  background-color: var(--white);
+@media (min-width: 1024px) {
+  #ty > div #confirmation {
+    flex-direction: row;
+  }
+}
+#ty > div #confirmation #reciept {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+#ty > div #confirmation #reciept button {
+  width: 100%;
+  padding: 16px 0px;
 }

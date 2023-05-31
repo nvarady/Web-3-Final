@@ -1,0 +1,32 @@
+/* =============
+    billing
+============= */
+
+
+#billing{
+
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". billing .";
+
+
+    >div{
+        grid-area: billing;
+
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        @include lg{
+            flex-direction: row-reverse;
+        }
+
+    }
+
+
+
+}
+
+
+
+

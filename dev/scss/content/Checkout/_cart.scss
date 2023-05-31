@@ -1,5 +1,5 @@
 /* =============
-    Cart
+    cart
 ============= */
 
 #cart{
@@ -7,6 +7,15 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". cart .";
+    padding-bottom: 80px;
+
+    @include lg{
+
+        padding-bottom: 200px;
+
+
+    }
+   
 
     background-image:linear-gradient(180deg, #E1CABA -4.15%, #CBA086 24.83%, #91472D 100%);
 
@@ -16,97 +25,105 @@
         grid-area: cart;
         display: flex;
         flex-direction: column;
+        margin-top: 60px;
 
         @include md{
 
             flex-direction: row;
-            margin: 180px;
+            align-content: center;
+            justify-content: center;
+           
 
             
         }
 
-        gap: 20px;
+        gap: 20px
 
-        
-        
-
-        
  
 
-        #cart-card{
-            
+        
 
+        }
+
+        #cart-card{
+
+            height: fit-content;
         img{
             width: 100%;
             padding: 8px;
         }
 
-        div{
-
-            display: flex;
-
-            justify-content: space-between;
-
-            .edit{
-
+        .edit{
+        
             text-decoration: underline;
-            font-size: 16px;
+            font-size: 12px;
             font-family: 'Noto Sans';
             font-weight: 300;
             color: var(--sky10);
-
-            }
-
-        }
-
-         #sub{
-         border-bottom: 2px solid var(--sky10);    
-
-        }
-
-        }
-
-        #payment{
-
+            text-justify: end;
+            margin-top: 16px;
         
-
-            #order-summary{
+            }
+        
+        
+        div{
+        
+            display: flex;
+        
+            justify-content: space-between;
+        
+        
+        
+        }
+        
+         .sub{
+         border-bottom: 2px solid var(--sky10);    
+        
+        }
+        
+        }
+        
+        #payment{
+        
+                
+        
+            #cart-order-summary{
                 display: none;
                 @include md{
                     display: block;
                     margin-bottom: 16px;
-
+                    
+        
                    
                 }
             }
-
+        
+            .sub{
+                border-bottom: 2px solid var(--sky10);    
+               
+               }
+        
         }
 
- 
-
-        #order{
-
-
-
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-
-            div{
-                display: flex;
-                gap: 16px;
-                justify-content: center;
-
-                button{
-                    background-color: var(--white);
-                }
-            }
-
-
-        }
-
-
-        }
+        
     
 }
+
+#related-checkout{
+    background-color: var(--cherry80);
+    padding-top: 18px;
+    display: flex;
+    flex-direction: column;
+
+    svg{
+        line-height: 0;
+        margin-bottom: 10px;
+        background-color: transparent;
+        fill: var(--cherry80);
+ 
+       
+    }
+}
+
+
 

@@ -16,3 +16,187 @@ input[type=password],
 textarea {
     -webkit-appearance: none;
 }
+
+.checkout-info{
+
+    padding: 20px;
+    background-color: var(--cantelope100);
+    border-radius: 16px;
+    padding: 8px 20px;
+    max-width: 600px;
+
+    h1{
+        font-size: 20px;
+    }
+    p{
+        font-size: 14px;
+    }
+    
+    @include lg{
+        width: 100%;
+
+        
+    }
+
+
+    #check-container{
+
+        //display: flex;
+
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+
+
+        #icon-container{
+
+            align-self: center;
+
+            display: flex;
+
+
+            input[type="checkbox"] {
+                /* Hide the default checkbox */
+                display: none;
+    
+            }
+    
+    
+            label {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-color: var(--white);
+     
+                cursor: pointer;
+    
+                #checked{
+    
+                    display: none;
+    
+    
+                }
+    
+             
+              }
+    
+              input[type="checkbox"]:checked + label {
+    
+                background-color: transparent;
+           
+    
+              
+    
+                #checked{
+                    align-self: flex-end;
+              
+    
+                    display: inline-block;
+                    color: var(--cherry80);
+                   
+      
+    
+                    i{
+                        width: 20px;
+                        height: 20px;
+                        
+                       
+                        
+                    }
+                   
+                   
+                }
+    
+              }
+              
+
+
+        }
+
+
+        
+          
+
+
+    
+    }
+
+    form{
+
+
+
+        input{
+            width: 100%;
+            border: none;
+            background-color: var(--white);
+            height: 40px;
+            font-family: 'Noto Sans';
+    
+        }
+
+        p{
+            
+            margin-bottom: 4px;
+        }
+    
+    }
+    div{
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+
+        form{
+            width: 100%;
+        }
+
+
+
+
+    
+    }
+
+
+}
+
+
+.order{
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+   
+
+
+
+    div{
+        
+        display: flex;
+        flex-direction: row;
+        gap: 16px;
+        justify-content: center;
+
+        button{
+            background-color: var(--white);
+            width: 100%;
+        
+
+            a{
+                display: flex;
+                justify-content: center;
+                align-content: center;
+
+                img{
+
+                    width: 80%;
+
+                   padding: 8px 0;
+                }
+                
+            }
+        }
+    }
+
+
+}
+
+

@@ -17,12 +17,12 @@
       "oAP" : "\/deploy\/billing.html",
       "oF" : 0
     },
-    "\/deploy\/checkout.html" : {
+    "\/deploy\/cart.html" : {
       "cB" : 0,
       "ft" : 8192,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/checkout.html",
+      "oAP" : "\/deploy\/cart.html",
       "oF" : 0
     },
     "\/deploy\/css\/styles.css" : {
@@ -55,6 +55,32 @@
       "iS" : 4698,
       "oA" : 0,
       "oAP" : "\/deploy\/Images\/checkout\/PayPal.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/Images\/checkout\/photo-icon.png" : {
+      "ft" : 32768,
+      "iS" : 749,
+      "oA" : 0,
+      "oAP" : "\/deploy\/Images\/checkout\/photo-icon.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/Images\/checkout\/Visa_Inc._logo 1.png" : {
+      "ft" : 32768,
+      "iS" : 1928,
+      "oA" : 0,
+      "oAP" : "\/deploy\/Images\/checkout\/Visa_Inc._logo 1.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -101,6 +127,16 @@
       "ou" : "lpckwebp-none",
       "q" : 90,
       "rq" : 75
+    },
+    "\/deploy\/Images\/global\/bump-curve.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/Images\/global\/bump-curve.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/Images\/global\/curve_top.svg" : {
       "ft" : 2097152,
@@ -229,6 +265,16 @@
       "ou" : "lpckwebp-none",
       "q" : 90,
       "rq" : 75
+    },
+    "\/deploy\/Images\/global\/Vector 7.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/Images\/global\/Vector 7.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/Images\/product-details\/blade.png" : {
       "ft" : 32768,
@@ -452,6 +498,22 @@
       "sC" : 3,
       "tS" : 0
     },
+    "\/deploy\/shipping.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/shipping.html",
+      "oF" : 0
+    },
+    "\/deploy\/thankyou.html" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/thankyou.html",
+      "oF" : 0
+    },
     "\/dev\/billing.kit" : {
       "cB" : 0,
       "ft" : 2048,
@@ -460,28 +522,28 @@
       "oAP" : "\/deploy\/billing.html",
       "oF" : 2
     },
-    "\/dev\/checkout.kit" : {
+    "\/dev\/cart.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 0,
-      "oAP" : "\/deploy\/checkout.html",
+      "oAP" : "\/deploy\/cart.html",
       "oF" : 2
     },
-    "\/dev\/content\/cart\/billing-input.kit" : {
+    "\/dev\/content\/checkout\/order-summary.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/cart\/billing-input.html",
+      "oAP" : "\/dev\/content\/checkout\/order-summary.html",
       "oF" : 0
     },
-    "\/dev\/content\/cart\/cart.kit" : {
+    "\/dev\/content\/checkout\/ty.kit" : {
       "cB" : 0,
       "ft" : 2048,
       "hM" : 0,
       "oA" : 1,
-      "oAP" : "\/dev\/content\/cart\/cart.html",
+      "oAP" : "\/dev\/content\/checkout\/ty.html",
       "oF" : 0
     },
     "\/dev\/content\/product-pg\/details.kit" : {
@@ -689,6 +751,21 @@
       "pg" : 0,
       "sct" : 0
     },
+    "\/dev\/scss\/content\/Checkout\/_billing.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/content\/Checkout\/_billing.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
     "\/dev\/scss\/content\/Checkout\/_cart.scss" : {
       "aP" : 0,
       "bl" : 0,
@@ -699,6 +776,36 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/content\/Checkout\/_cart.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/content\/Checkout\/_shipping.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/content\/Checkout\/_shipping.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/content\/Checkout\/_ty.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/content\/Checkout\/_ty.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,
