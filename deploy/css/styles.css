@@ -702,6 +702,72 @@ textarea {
 /* =============
     Header
 ============= */
+header {
+  display: grid;
+  grid-template-columns: 50% auto;
+  grid-template-areas: "logo burger" "nav nav";
+  padding: 16px;
+  position: fixed;
+  width: 100%;
+  background-color: white;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
+}
+@media (min-width: 1024px) {
+  header {
+    grid-template-areas: "logo nav";
+  }
+}
+header #logo {
+  grid-area: logo;
+  display: flex;
+  align-items: center;
+}
+header #burger-container {
+  grid-area: burger;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+@media (min-width: 1024px) {
+  header #burger-container {
+    display: none;
+  }
+}
+header #burger-container button {
+  border: none;
+  background-color: transparent;
+  color: black;
+  font-size: 1.25rem;
+}
+header nav {
+  grid-area: nav;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+}
+header nav ul li form {
+  display: flex;
+}
+header nav ul li form input {
+  display: none;
+}
+@media (min-width: 1024px) {
+  header nav ul li form input {
+    display: block;
+  }
+}
+header nav ul li form input button {
+  margin-left: auto;
+  width: 100%;
+}
 /* =============
     Footer
 ============= */
@@ -1010,7 +1076,7 @@ svg {
 }
 @media (min-width: 1024px) {
   #info-graphic {
-    padding-top: 60px;
+    padding: 160px;
   }
 }
 #info-graphic div {
@@ -1087,12 +1153,12 @@ svg {
 @media (min-width: 768px) {
   #tc-curve-bottom {
     margin-top: 80px;
-    margin-bottom: -100px;
   }
 }
 @media (min-width: 1024px) {
   #tc-curve-bottom {
-    margin-top: 100px;
+    margin-top: 120px;
+    margin-bottom: -180px;
   }
 }
 
@@ -1459,6 +1525,7 @@ svg {
   flex-direction: column;
   gap: 20px;
   justify-content: center;
+  margin-top: 40px;
 }
 @media (min-width: 1024px) {
   #ty > div #confirmation {

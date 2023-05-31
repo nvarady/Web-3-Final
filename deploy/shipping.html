@@ -14,14 +14,39 @@
 
 <body>
     <script src="js/scripts-min.js"></script>
-    <section id="header">
+    <header class="header-footer-grid">
+            <section id="logo">
+               <a href="#hero"><img src="Images/global/LN-logo.png" alt="logo of company"></a>
+            </section>
         
+            <section id="burger-container">
+                <button id="burger-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </section>
             
-        
-           
-        
-        
-        </section>
+            <nav id="main-menu">
+                <ul>
+                    <li>
+                        <form action="#">
+                            <input type="search">
+                            <button>
+                                <a href="#">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </a>
+                            </button>
+                        </form>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-user"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                        <p>Cart</p>
+                    </li>
+                </ul>
+            </nav>
+        </header>
     
     <section id="shipping" class="checkout-styling">
         <div>
@@ -132,12 +157,12 @@
                    
             
                 <div>
-                    <button>
+                    <button class="button-3">
                         <a href="billing.html">
                             <h1>Back</h1>
                         </a>
                     </button>
-                    <button>
+                    <button class="button-3">
                         <a href="thankyou.html">
                             <h1>Place Order</h1>
                         </a>
