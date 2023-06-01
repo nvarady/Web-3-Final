@@ -20,6 +20,7 @@ html {
   --sky10:#454F5F;
   --sky60:#576E8B;
   --sky90:#9DAAC0;
+  --sky100:#C2CAD8;
   --g-light:linear-gradient(90deg, rgba(225,202,186,1) 0%, rgba(203,160,134,1) 35%, rgba(145,71,45,1) 100%);
   --g-dark:linear-gradient(180deg, #E1CABA -4.15%, #CBA086 30.57%, #A15F45 99.99%, #91472D 100%);
 }
@@ -699,75 +700,173 @@ textarea {
 /* =============
     Navigation
 ============= */
+.show-menu {
+  display: block !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+nav {
+  padding-top: 48px;
+  padding: 48px 20px 20px 20px;
+  display: none;
+}
+@media (min-width: 1024px) {
+  nav {
+    display: block;
+    padding: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    gap: 40px;
+  }
+}
+nav ul li {
+  margin-bottom: 24px;
+}
+@media (min-width: 1024px) {
+  nav ul li {
+    margin-bottom: 0;
+  }
+}
+nav ul li a:link, nav ul li a:visited {
+  color: var(--white);
+  font-size: 1.25rem;
+  font-family: "Noto Sans";
+  padding: 24px 0;
+  transition: 0.25s;
+}
+@media (min-width: 1024px) {
+  nav ul li a:link, nav ul li a:visited {
+    padding: 0px 0px 0px 24px;
+    font-size: 1rem;
+    font-weight: 300;
+  }
+}
+nav ul li a:link:hover, nav ul li a:link:active, nav ul li a:visited:hover, nav ul li a:visited:active {
+  color: var(--yellow);
+}
+
+.nav-icon {
+  color: var(--sky100);
+}
+@media (min-width: 1024px) {
+  .nav-icon {
+    color: var(--sky10);
+  }
+}
+
 /* =============
     Header
 ============= */
 header {
   display: grid;
   grid-template-columns: 50% auto;
-  grid-template-areas: "logo burger" "nav nav";
-  padding: 16px;
-  position: fixed;
-  width: 100%;
-  background-color: white;
-  box-sizing: border-box;
-  box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
+  grid-template-areas: "logo logo" "burger icons" "nav nav";
+  padding-top: 30px;
+  background-color: var(--sky90);
 }
 @media (min-width: 1024px) {
   header {
-    grid-template-areas: "logo nav";
+    grid-template-areas: "logo icons" "nav nav";
   }
 }
-header #logo {
+header #logo-nav {
   grid-area: logo;
+}
+header #logo-nav a {
   display: flex;
-  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+}
+header #logo-nav a img {
+  width: 80%;
+}
+@media (min-width: 1024px) {
+  header #logo-nav a img {
+    margin-right: auto;
+    margin-left: 40px;
+    width: 50%;
+  }
 }
 header #burger-container {
   grid-area: burger;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  padding: 20px;
+  background-color: var(--sky60);
+}
+header #burger-container #burger-btn {
+  background-color: transparent;
 }
 @media (min-width: 1024px) {
   header #burger-container {
     display: none;
   }
 }
-header #burger-container button {
-  border: none;
-  background-color: transparent;
-  color: black;
-  font-size: 1.25rem;
-}
 header nav {
+  background-color: var(--sky60);
   grid-area: nav;
 }
-header nav ul {
+header #nav-icons {
+  grid-area: icons;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
+  align-content: flex-end;
+  gap: 30px;
+  padding: 20px;
+  background-color: var(--sky60);
 }
-header nav ul li {
+@media (min-width: 1024px) {
+  header #nav-icons {
+    gap: 40px;
+    margin-right: 40px;
+    background-color: transparent;
+    align-self: flex-end;
+  }
+}
+header #nav-icons a {
   display: flex;
-  align-content: center;
-  justify-content: center;
-  text-align: center;
+  align-content: baseline;
 }
-header nav ul li form {
+header #nav-icons a i {
+  align-self: center;
+}
+header #nav-icons #search-nav {
   display: flex;
 }
-header nav ul li form input {
+header #nav-icons #search-nav button {
+  background-color: transparent;
+}
+header #nav-icons #search-nav input {
   display: none;
 }
 @media (min-width: 1024px) {
-  header nav ul li form input {
+  header #nav-icons #search-nav input {
     display: block;
+    margin-right: -35px;
+    background-color: var(--sky100);
+    border: none;
+    border-radius: 8px;
+    width: 300px;
+    height: 40px;
+    align-self: center;
+    font-family: "Noto Sans";
+    padding-left: 16px;
   }
 }
-header nav ul li form input button {
-  margin-left: auto;
-  width: 100%;
-}
+
 /* =============
     Footer
 ============= */
@@ -875,47 +974,53 @@ svg {
 #details > div {
   grid-area: details;
 }
-#details > div ul {
-  padding: 0px 24px;
+#details > div h1 {
+  margin-bottom: 16px;
 }
-@media (min-width: 768px) {
-  #details > div ul {
-    margin: 0px 100px;
-  }
+#details > div #details-container {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+#details > div #details-container ul {
+  padding: 0px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 @media (min-width: 1024px) {
-  #details > div ul {
-    margin: 0px 180px;
+  #details > div #details-container ul {
+    width: 1000px;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     justify-content: center;
+    align-content: center;
     gap: 10px;
     row-gap: 10px;
     grid-template-areas: ". i1 i1 i1 i1 ." "i2 i2 i3 i3 i4 i4";
   }
-  #details > div ul #i1 {
+  #details > div #details-container ul #i1 {
     grid-area: i1;
   }
-  #details > div ul #i2 {
+  #details > div #details-container ul #i2 {
     grid-area: i2;
   }
-  #details > div ul #i3 {
+  #details > div #details-container ul #i3 {
     grid-area: i3;
   }
-  #details > div ul #i4 {
+  #details > div #details-container ul #i4 {
     grid-area: i4;
   }
 }
-#details > div ul li {
+#details > div #details-container ul li {
   background-color: var(--cherry90);
   width: 100%;
   height: 132px;
-  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-content: center;
 }
-#details > div ul li p {
+#details > div #details-container ul li p {
   margin: auto;
   text-align: center;
   line-height: 22px;

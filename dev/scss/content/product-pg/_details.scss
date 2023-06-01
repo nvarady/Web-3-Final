@@ -36,27 +36,41 @@ svg{
 
 
 
-    >div{
+   >div{
+    grid-area: details;
 
-        grid-area: details;
+    h1{
+        margin-bottom: 16px;
+    }
+
+    #details-container{
+
+        
+        display: flex;
+        align-content: center;
+        justify-content: center;
 
 
          ul{
+            
             padding: 0px 24px;
+            
 
-            @include md{
-                margin: 0px 100px;
-                
-            }
-           
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            
 
             @include lg{
 
-                margin: 0px 180px;
+                width: 1000px;
+
+             
 
                 display: grid;
                 grid-template-columns: repeat(6,1fr);
                 justify-content: center;
+                align-content: center;
                 gap: 10px;
                 row-gap: 10px;
                 grid-template-areas:
@@ -88,7 +102,7 @@ svg{
             height: 132px;
                 
 
-            margin-top: 20px;
+           
             display: flex;
             justify-content: center;
             align-content: center;
@@ -107,5 +121,6 @@ svg{
         }
 
     }
+   }
    
 }
