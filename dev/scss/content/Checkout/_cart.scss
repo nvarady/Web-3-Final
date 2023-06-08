@@ -25,13 +25,15 @@
         grid-area: cart;
         display: flex;
         flex-direction: column;
-        margin-top: 60px;
+        
+        
 
         @include md{
 
             flex-direction: row;
             align-content: center;
             justify-content: center;
+            
            
 
             

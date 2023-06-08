@@ -455,6 +455,15 @@ ul li {
   }
 }
 
+.nav-padding {
+  padding-top: 200px;
+}
+@media (min-width: 768px) {
+  .nav-padding {
+    padding-top: 250px;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -556,7 +565,7 @@ button {
 .button-3 {
   background-color: var(--sky60);
   justify-content: center;
-  margin-top: 20px;
+  margin: 20px 0px;
 }
 .button-3 a {
   color: white;
@@ -572,15 +581,32 @@ button {
 
 .tc-button {
   background-color: transparent;
+  display: flex;
+  gap: 8px;
+  justify-content: flex-start;
   border: none;
   color: var(--sky60);
   font-family: "Noto Serif";
   font-style: normal;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 27px;
   text-align: center;
   text-decoration-line: underline;
+  padding: 0;
+}
+.tc-button a {
+  display: flex;
+  color: var(--sky60);
+  gap: 8px;
+}
+.tc-button a i {
+  align-self: center;
+  justify-items: center;
+}
+.tc-button a h1 {
+  font-size: 16px;
+  text-justify: center;
 }
 
 /* =============
@@ -602,7 +628,6 @@ textarea {
 }
 
 .checkout-info {
-  padding: 20px;
   background-color: var(--cantelope100);
   border-radius: 16px;
   padding: 8px 20px;
@@ -667,6 +692,7 @@ textarea {
   display: flex;
   justify-content: space-between;
   gap: 16px;
+  align-items: flex-end;
 }
 .checkout-info div form {
   width: 100%;
@@ -775,8 +801,9 @@ header {
   display: grid;
   grid-template-columns: 50% auto;
   grid-template-areas: "logo logo" "burger icons" "nav nav";
-  padding-top: 30px;
   background-color: var(--sky90);
+  position: fixed;
+  width: 100%;
 }
 @media (min-width: 1024px) {
   header {
@@ -911,8 +938,11 @@ header #nav-icons #search-nav input {
   padding: 40px 0px;
   padding-bottom: 50px;
   display: flex;
-  gap: 20px;
+  gap: 40px;
   justify-content: center;
+}
+#footer #foot #socials img {
+  width: 25px;
 }
 #footer #foot p {
   text-align: center;
@@ -929,12 +959,6 @@ header #nav-icons #search-nav input {
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". product .";
   padding-bottom: 60px;
-  padding-top: 60px;
-}
-@media (min-width: 768px) {
-  #product {
-    padding-bottom: 100px;
-  }
 }
 #product > div {
   grid-area: product;
@@ -1033,13 +1057,14 @@ svg {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". parts .";
-  padding-top: 32px;
+  padding-top: 16px;
   background-color: var(--cantelope100);
   padding-bottom: 150px;
 }
 @media (min-width: 1024px) {
   #parts {
     padding-bottom: 250px;
+    padding-top: 10px;
   }
 }
 #parts > div {
@@ -1070,7 +1095,6 @@ svg {
   }
 }
 #parts #blade-container #blade #blade-text {
-  display: flex;
   flex-direction: column;
   padding: 20px;
 }
@@ -1108,7 +1132,6 @@ svg {
   }
 }
 #parts #handle-container #handle #handle-text {
-  display: flex;
   flex-direction: column;
   padding: 20px;
 }
@@ -1175,13 +1198,14 @@ svg {
 ============= */
 #info-graphic {
   background-color: var(--cherry60);
-  padding-top: 50px;
+  padding-top: 80px;
   line-height: 0;
   padding: 16px;
 }
 @media (min-width: 1024px) {
   #info-graphic {
     padding: 160px;
+    padding-bottom: 80px;
   }
 }
 #info-graphic div {
@@ -1252,8 +1276,8 @@ svg {
 }
 
 #tc-curve-bottom {
-  margin-top: 50px;
   margin-bottom: -40px;
+  line-height: 0;
 }
 @media (min-width: 768px) {
   #tc-curve-bottom {
@@ -1271,7 +1295,13 @@ svg {
     rev-rel
 ============= */
 #rev-rel {
+  padding-top: 0px;
   background-image: linear-gradient(180deg, #E1CABA -4.15%, #CBA086 24.83%, #91472D 100%);
+}
+@media (min-width: 1024px) {
+  #rev-rel {
+    padding-top: 60px;
+  }
 }
 
 /* =============
@@ -1279,7 +1309,7 @@ svg {
 ============= */
 #reviews {
   display: grid;
-  grid-template-columns: 16px auto 16px;
+  grid-template-columns: 8px auto 8px;
   grid-template-areas: ". reviews .";
   padding-top: 100px;
 }
@@ -1294,7 +1324,6 @@ svg {
   justify-self: center;
   border-radius: 16px;
   background-color: var(--cantelope100);
-  max-width: 800px;
   margin-bottom: 60px;
   grid-area: reviews;
 }
@@ -1460,7 +1489,12 @@ svg {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". related .";
-  padding-bottom: 60px;
+  padding-bottom: 40px;
+}
+@media (min-width: 1024px) {
+  #related {
+    padding-bottom: 60px;
+  }
 }
 #related #related-container {
   grid-area: related;
@@ -1473,7 +1507,7 @@ svg {
 }
 #related #related-container ul {
   display: grid;
-  grid-template-columns: 50% auto;
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
 }
 @media (min-width: 1024px) {
@@ -1483,11 +1517,15 @@ svg {
 }
 #related #related-container ul li {
   padding: 20px;
+  padding: 20px;
   background-color: var(--white);
   border-radius: 16px;
   text-align: center;
   display: flex;
   flex-direction: column;
+}
+#related #related-container ul li div {
+  display: flex;
 }
 #related #related-container ul li div img {
   width: 100%;
@@ -1508,6 +1546,12 @@ svg {
 }
 #related #related-container ul li aside button a {
   color: var(--white);
+  font-size: 14px;
+}
+@media (min-width: 1024px) {
+  #related #related-container ul li aside button a {
+    font-size: 16px;
+  }
 }
 
 /* =============
@@ -1529,7 +1573,6 @@ svg {
   grid-area: cart;
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
   gap: 20px;
 }
 @media (min-width: 768px) {
@@ -1595,6 +1638,12 @@ svg {
   display: grid;
   grid-template-columns: 16px auto 16px;
   grid-template-areas: ". billing .";
+  padding-top: 160px;
+}
+@media (min-width: 768px) {
+  #billing {
+    padding-top: 60px;
+  }
 }
 #billing > div {
   grid-area: billing;
@@ -1611,6 +1660,18 @@ svg {
 /* =============
     shipping
 ============= */
+#shipping {
+  display: grid;
+  grid-template-columns: 16px auto 16px;
+  grid-template-areas: ". billing .";
+  padding-top: 160px;
+}
+@media (min-width: 768px) {
+  #shipping {
+    padding-top: 60px;
+  }
+}
+
 /* =============
     thank you
 ============= */
@@ -1623,7 +1684,6 @@ svg {
 }
 #ty > div {
   grid-area: thankyou;
-  margin-top: 60px;
 }
 #ty > div #confirmation {
   display: flex;

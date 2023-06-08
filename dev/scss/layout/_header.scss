@@ -10,9 +10,12 @@ header{
     "burger icons"
     "nav nav";
 
-    padding-top: 30px;
+    //padding-top: 25px;
 
     background-color: var(--sky90);
+    position: fixed;
+    width: 100%;
+    
 
     @include lg{
         grid-template-areas: "logo icons" 

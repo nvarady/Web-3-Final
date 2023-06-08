@@ -7,13 +7,14 @@
     display: grid;
     grid-template-columns: 16px auto 16px;
     grid-template-areas: ". parts .";
-    padding-top: 32px;
+    padding-top: 16px;
     background-color: var(--cantelope100);
     padding-bottom: 150px;
 
     @include lg{
 
         padding-bottom: 250px;
+        padding-top: 10px;
     }
     
 
@@ -56,7 +57,7 @@
              }
 
             #blade-text{
-                display: flex;
+                //display: flex;
                 flex-direction: column;
                 padding: 20px;
 
@@ -116,7 +117,7 @@
              }
 
             #handle-text{
-                display: flex;
+                //display: flex;
                 flex-direction: column;
                 padding: 20px;
 

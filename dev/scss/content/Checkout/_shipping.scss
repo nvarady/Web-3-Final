@@ -3,4 +3,19 @@
 ============= */
 
 
+#shipping{
 
+    display: grid;
+    grid-template-columns: 16px auto 16px;
+    grid-template-areas: ". billing .";
+    padding-top: 160px;
+
+    @include md{
+        padding-top: 60px;    }
+    
+
+
+    
+
+
+}

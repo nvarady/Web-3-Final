@@ -5,13 +5,15 @@
 
 #info-graphic{
     background-color: var(--cherry60);
-    padding-top: 50px;
+    padding-top: 80px;
     line-height: 0;
     padding: 16px;
+
     
 
     @include lg{
         padding: 160px;
+        padding-bottom: 80px;
     }
 
 
@@ -129,8 +131,9 @@ img{
     }
 
     #tc-curve-bottom{
-        margin-top: 50px;
+       // margin-top: 50px;
         margin-bottom: -40px;
+        line-height: 0;
 
         @include md{
             margin-top: 80px;

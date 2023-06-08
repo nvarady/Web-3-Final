@@ -74,7 +74,7 @@ button{
     background-color:var(--sky60);
     justify-content: center;
 
-    margin-top: 20px;
+    margin: 20px 0px;
 
     a{
 
@@ -104,14 +104,39 @@ button{
 .tc-button{
 
     background-color: transparent;
+    display: flex;
+    gap: 8px;
+    justify-content: flex-start;
     border: none;
     color: var(--sky60);
     font-family: 'Noto Serif';
     font-style: normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 27px;
     text-align: center;
     text-decoration-line: underline;
+    padding: 0;
 
+
+
+    a{
+        display: flex;
+        color: var(--sky60);
+        gap: 8px;
+       
+
+
+        i{
+            align-self: center;
+            justify-items: center
+            
+
+            
+        }
+        h1{
+            font-size: 16px;
+            text-justify: center;
+        }
+    }
 }

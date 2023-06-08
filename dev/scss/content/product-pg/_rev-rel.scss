@@ -3,6 +3,10 @@
 ============= */
 
 #rev-rel{
+    padding-top: 0px;
+    @include lg{
+        padding-top: 60px;
+    }
     background-image:linear-gradient(180deg, #E1CABA -4.15%, #CBA086 24.83%, #91472D 100%);
 
 }
