@@ -9,6 +9,12 @@
     grid-template-areas: ". thankyou .";
     padding-bottom: 80px;
     background-image:(linear-gradient(180deg, #EFE3DA 0%, #CBA086 100%));
+    padding-top: 225px;
+
+    @include md{
+
+        padding-top: 250px;
+    }
 
 
 

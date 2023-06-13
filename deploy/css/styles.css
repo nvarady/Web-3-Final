@@ -456,7 +456,7 @@ ul li {
 }
 
 .nav-padding {
-  padding-top: 200px;
+  padding-top: 250px;
 }
 @media (min-width: 768px) {
   .nav-padding {
@@ -1679,6 +1679,12 @@ svg {
   grid-template-areas: ". thankyou .";
   padding-bottom: 80px;
   background-image: linear-gradient(180deg, #EFE3DA 0%, #CBA086 100%);
+  padding-top: 225px;
+}
+@media (min-width: 768px) {
+  #ty {
+    padding-top: 250px;
+  }
 }
 #ty > div {
   grid-area: thankyou;
