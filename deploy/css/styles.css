@@ -710,7 +710,7 @@ textarea {
   justify-content: center;
 }
 .order div button {
-  background-color: var(--white);
+  background-color: var(--cantelope100);
   width: 100%;
 }
 .order div button a {
@@ -803,6 +803,8 @@ header {
   grid-template-areas: "logo logo" "burger icons" "nav nav";
   background-color: var(--sky90);
   position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
 }
 @media (min-width: 1024px) {
@@ -1355,14 +1357,14 @@ svg {
 #reviews #review-container #review-head #rating #left {
   border-right: 2px solid var(--sky10);
 }
-#reviews #review-container #review-head #stars {
+#reviews #review-container #review-head .stars {
   display: flex;
   align-content: center;
   justify-content: center;
   gap: 4px;
 }
 @media (min-width: 1024px) {
-  #reviews #review-container #review-head #stars {
+  #reviews #review-container #review-head .stars {
     margin-left: auto;
   }
 }
@@ -1465,10 +1467,6 @@ svg {
 }
 #reviews #review-container #review-container-2 #review #entry h2 {
   font-size: 20px;
-}
-#reviews #review-container #review-container-2 #review #entry #stars-2 {
-  line-height: 0;
-  margin: -8px 0;
 }
 #reviews #review-container #review-container-2 #review-nav {
   display: flex;
